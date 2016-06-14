@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!--
+/* Wise fancy box designer */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+	<preference for="Magento\Widget\Controller\Adminhtml\Widget\BuildWidget" type="Wise\Fancy\Controller\Widget\Adminhtml\Widget\BuildWidget" />
+	<preference for="Magento\Widget\Model\Widget" type="Wise\Fancy\Model\Widget" />
+</config>

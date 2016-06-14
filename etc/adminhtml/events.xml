@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/* Wise fancy box designer */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="catalog_product_edit_action">
+        <observer name="Wise_Fancy_loadproductbrand" instance="Wise\Fancy\Observer\LoadProductBrand" />
+    </event>
+    <event name="controller_action_catalog_product_save_entity_after">
+        <observer name="Wise_Fancy_saveproductbrand" instance="Wise\Fancy\Observer\SaveProductBrand" />
+    </event>
+</config>

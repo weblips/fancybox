@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/* Wise fancy box designer */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+		<title>Product for Fancy Box Desiner</title>
+		<css src="Wise_Fancy::css/main.css"/>
+		<css src="Wise_Fancy::css/FancyProductDesigner-all.min.css"/>
+		<css src="Wise_Fancy::css/jquery.fancyProductDesigner-fonts.css"/>
+		<!-- The following add local JavaScript files  -->
+		<script src="Wise_Fancy::js/jquery.min.js"/>
+		<script src="Wise_Fancy::js/jquery-ui.min.js"/>
+		<script src="Wise_Fancy::js/fabric.min.js"/>
+		<script src="Wise_Fancy::js/FancyProductDesigner-all.min.js"/>
+	</head>
+	<body>
+		<referenceContainer name="content">
+			<block class="Wise\Fancy\Block\Brandpage" name="wisefancy.list">
+				<block class="Wise\Fancy\Block\Toolbar" name="wisefancy_toolbar" template="Wise_Fancy::toolbar.phtml">
+					<block class="Magento\Theme\Block\Html\Pager" name="brand_list_toolbar_pager"/>
+				</block>
+			</block>
+		</referenceContainer>
+		<referenceContainer name="left">
+			<block class="Wise\Fancy\Block\Group\View" name="wisefancy.group.list"/>
+		</referenceContainer>
+	</body>
+</page>

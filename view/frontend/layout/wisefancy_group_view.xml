@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/* Wise fancy box designer */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceContainer name="content">
+			<block class="Wise\Fancy\Block\Group\View" name="wisefancy.group.list">
+				<block class="Wise\Fancy\Block\Toolbar" name="wisefancy_toolbar" template="Wise_Fancy::toolbar.phtml">
+					<block class="Magento\Theme\Block\Html\Pager" name="brand_list_toolbar_pager"/>
+				</block>
+			</block>
+		</referenceContainer>
+	</body>
+</page>

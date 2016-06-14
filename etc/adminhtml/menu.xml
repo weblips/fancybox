@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/* Wise fancy box designer */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+	<menu>
+		
+		<add id="Wise_Fancy::brand" title="Fancy Box Designer" module="Wise_Fancy" sortOrder="10" resource="Wise_Fancy::brand"/>
+
+		<add id="Wise_Fancy::brand_head_manage" title="Fancy Box Designer" module="Wise_Fancy" sortOrder="10" parent="Wise_Fancy::brand" resource="Wise_Fancy::brand"/>
+
+		<add id="Wise_Fancy::brand_new" title="Add New Box" module="Wise_Fancy" sortOrder="10" parent="Wise_Fancy::brand_head_manage" action="wisefancy/brand/new" resource="Wise_Fancy::brand"/>
+
+		<add id="Wise_Fancy::brand_manage" title="Manager Box" module="Wise_Fancy" sortOrder="20" parent="Wise_Fancy::brand_head_manage" action="wisefancy/brand/index" resource="Wise_Fancy::brand"/>
+
+		<add id="Wise_Fancy::brand_head_group_manage" title="Fancy Box Designer Group" module="Wise_Fancy" sortOrder="20" parent="Wise_Fancy::brand" resource="Wise_Fancy::group"/>
+ 
+		<add id="Wise_Fancy::brand_group_add_new" title="Add New Group" module="Wise_Fancy" sortOrder="10" parent="Wise_Fancy::brand_head_group_manage" action="wisefancy/group/new" resource="Wise_Fancy::group"/>
+
+		<add id="Wise_Fancy::brand_group_manage" title="Manager Groups" module="Wise_Fancy" sortOrder="20" parent="Wise_Fancy::brand_head_group_manage" action="wisefancy/group/index" resource="Wise_Fancy::group"/>
+	
+		<add id="Wise_Fancy::brand_head_settings" title="Settings" module="Wise_Fancy" sortOrder="20" parent="Wise_Fancy::brand" resource="Wise_Fancy::config_brand"/>
+
+        <add id="Wise_Fancy::configuration" title="Configuration" module="Wise_Fancy" sortOrder="6"
+            parent="Wise_Fancy::brand_head_settings" action="adminhtml/system_config/edit/section/wisefancy" resource="Wise_Fancy::config_brand"/>
+	</menu>
+</config>

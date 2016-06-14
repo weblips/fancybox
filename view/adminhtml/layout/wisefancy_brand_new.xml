@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!--
+/* Wise fancy box designer */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="brand_edit_tabs"/>
+    <body/>
+</page>

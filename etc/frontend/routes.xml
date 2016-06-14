@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--
+/* Wise fancy box designer */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="wisefancy" frontName="wisefancy">
+            <module name="Wise_Fancy" before="Magento_Backend" />
+        </route>
+    </router>
+</config>

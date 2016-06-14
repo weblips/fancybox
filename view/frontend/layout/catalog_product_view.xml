@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/* Wise fancy box designer */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceContainer name="content">
+			<referenceContainer name="product.info.main">
+				<block class="Wise\Fancy\Block\Product\View" name="product.info.brand" after="product.info.price" template="Wise_Fancy::product/view/logo.phtml" />
+			</referenceContainer>
+		</referenceContainer>
+	</body>
+</page>

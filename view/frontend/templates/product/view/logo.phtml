@@ -1,0 +1,31 @@
+<?php
+$brandCollection = $this->getBrandCollection();
+?>
+<?php if($brandCollection->count()){ ?>
+	<?php
+	$i = 0;
+	$total = $brandCollection->count();
+	?>
+	<?php foreach ($brandCollection as $_brand) { ?>
+		<span class="brand-image">
+			<a href="<?php echo $_brand->getUrl(); ?>" title="<?php echo $_brand->getName(); ?>">
+			<img src="<?php echo $_brand->getThumbnailUrl(); ?>"/></a>
+			<a href="<?php echo $_brand->getUrl(); ?>" title="<?php echo $_brand->getName(); ?>">
+		</span>
+		<?php if($i<=($total-2)){ echo ', '; }  ?>
+		<?php $i++; ?>
+	<?php } ?>
+<?php } ?>
+<br />
+
+<?php
+// Create dataCollection (info Product )
+$dataFancybox = ['blockFancy' => [
+	                           $_brand->getUrl(),
+	                           $_brand->getThumbnailUrl()
+	]
+              ];
+echo '<pre>'; print_r($dataFancybox);
+?>
+<a class="btn btn-success" href="http://falcons.xxx/wisefancy.html" role="button">Create Fancy Box Designer</a>
+

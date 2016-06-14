@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!--
+/* Wise fancy box designer */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<wisefancy>
+			<general_settings>
+				<enable>1</enable>
+				<route>wisefancy.html</route>
+				<url_prefix>fancy</url_prefix>
+				<url_suffix>.html</url_suffix>
+			</general_settings>
+			<brand_list_page>
+				<layout>grid</layout>
+				<show_brand_name>0</show_brand_name>
+				<item_per_page>8</item_per_page>
+				<page_title>Fancy Box designer</page_title>
+				<meta_description>Fancy Box designer for product</meta_description>
+				<meta_keywords>Fancy Box Product, create custom product, fancy box designer</meta_keywords>
+				<lg_column_item>4</lg_column_item>
+				<md_column_item>4</md_column_item>
+				<sm_column_item>2</sm_column_item>
+				<xs_column_item>2</xs_column_item>
+			</brand_list_page>
+			<group_page>
+				<show_brand_name>0</show_brand_name>
+				<item_per_page>12</item_per_page>
+				<lg_column_item>4</lg_column_item>
+				<md_column_item>4</md_column_item>
+				<sm_column_item>2</sm_column_item>
+				<xs_column_item>2</xs_column_item>
+			</group_page>
+			<brand_block>
+				<enable>1</enable>
+				<title>Top Fancy Box designer</title>
+				<brand_groups>1,2</brand_groups>
+				<show_brand_name>0</show_brand_name>
+				<number_item>12</number_item>
+				<carousel_layout>owl_carousel</carousel_layout>
+				<number_item_per_column>1</number_item_per_column>
+				<default_items>5</default_items>
+				<mobile_items>1</mobile_items>
+				<tablet_small_items>2</tablet_small_items>
+				<tablet_items>3</tablet_items>
+				<portrait_items>5</portrait_items>
+				<large_items>6</large_items>
+				<autoplay>1</autoplay>
+				<autoplay_timeout>3000</autoplay_timeout>
+				<autoplay_pauseonhover>1</autoplay_pauseonhover>
+				<item_per_page>4</item_per_page>
+				<lg_column_item>4</lg_column_item>
+				<md_column_item>4</md_column_item>
+				<sm_column_item>2</sm_column_item>
+				<xs_column_item>1</xs_column_item>
+				<interval>3000</interval>
+				<dots>1</dots>
+				<nav>1</nav>
+				<nav_prev>Prev</nav_prev>
+				<nav_next>Next</nav_next>
+				<loop>0</loop>
+				<rtl>0</rtl>
+			</brand_block>
+		</wisefancy>
+	</default>
+</config>
